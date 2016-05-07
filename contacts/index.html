@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Контакты | Окна на заказ в г. Мироновка и Киевской области</title>
+	<meta name="theme-color" content="#0288D1"> <!-- chrome tab color -->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="clear">
+			<div class="logo left"><span class="painted">O</span>kna<span class="painted">MIR</span></div>
+			<div class="contact-info right">
+				<a href="tel:+380963400038" target="_blank"><span class="phone-number">+38(096) 340-00-38</span></a>
+				<a href="https://www.google.com.ua/maps/place/49%C2%B038'59.0%22N+30%C2%B059'20.2%22E/@49.6496439,30.9883791,17z/data=!4m2!3m1!1s0x0:0x0?hl=ru" target="_blank"><span class="address">г. Мироновка ул. Щорса 1А</span></a>
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="/" class="nav-button ">Главная</a></li>
+				<li><a href="/gates" class="nav-button ">Ворота</a></li>
+				<li><a href="/doors" class="nav-button">Двери</a></li>
+				<li><a href="/windows" class="nav-button">Окна</a></li>
+				<li><a href="#" class="nav-button  active-button">Контакты</a></li>
+			</ul>
+		</nav>
+		<section>
+		<h1>Наши контакты</h1>
+		<p class="contacts-text">
+		<span class="title">Адрес</span><br>
+		Киевская обл. г. Мироновка ул. Щорса 1А (Козацкая 1А) <a href="https://www.google.com.ua/maps/place/49%C2%B038'59.0%22N+30%C2%B059'20.2%22E/@49.6496439,30.9883791,17z/data=!4m2!3m1!1s0x0:0x0?hl=ru" target="_blank">открыть на картах Google</a> <br>
+		<span class="title">Телефон</span><br>
+		+38 (096) 340-00-38 (Олег)<br>
+		<span class="title">Email</span><br>
+		<a href="mailto:info@site.com?subject=Вопрос по заказу">info@site.com</a> <br>
+		<span class="title">Режим работы</span><br>
+		8:00-17:00. Работаем в пределах Киевской и Черкасской области<br>
+		</p>
+
+		<div class="map">
+			<div id="map-canvas"></div>
+		</div>
+		</section>
+		<footer>
+			<p class="copyright"><a href="">© oknamir.com.ua</a> <br>2016</p>
+		</footer>
+	</div> 
+	<!-- END WRAPPER -->
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+  function initialize() {
+    var mapCanvas = document.getElementById('map-canvas');
+    var mapOptions = {
+      center: new google.maps.LatLng(49.6498120,30.9887378), 
+      zoom: 17,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      scrollwheel: false
+    }
+    var myLatLng = {lat: 49.6498120, lng: 30.9887378};
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var marker = new google.maps.Marker({
+	position: myLatLng,
+	map: map
+	});
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+</body>
+</html>
