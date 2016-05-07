@@ -1,7 +1,5 @@
 body {
 	font-family: "PT sans", "Open sans", "Segoe UI", "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
-	background-image: url(/images/congruent_pentagon.png);
-	background-image: url(/images/diamond_upholstery.png);
 	background-image: url(/images/gplaypattern2.png);
 }
 .left {float: left;}
