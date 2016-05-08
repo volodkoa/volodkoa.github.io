@@ -103,11 +103,16 @@ nav li {
 
 /*BEGIN slider*/
 .slider ul {
-	margin: 0; 
+	margin: 0;
+	padding: 0;
 }
 .bxslider li {
 	list-style: none;
 }
+.bxslider img {
+	max-width: 100%;
+}
+
 /*END slider*/
 
 /*BEGIN section*/
