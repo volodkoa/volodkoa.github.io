@@ -105,6 +105,9 @@ nav li {
 .slider ul {
 	margin: 0; 
 }
+.bxslider li {
+	list-style: none;
+}
 /*END slider*/
 
 /*BEGIN section*/
